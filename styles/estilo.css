@@ -7,33 +7,15 @@ body {
 
 header{
     background-image:url(/img/Tarja\ superior.png);
-    justify-content: space-around;
-    
-
-
-
-
- 
-    
+    justify-content: space-around;    
 }
 
-
-.tamanho_das_tarjas{
-    width: 1920px;
-    height: 150px;
-}
-
-        min-width: 10px;
-        max-width: 100%;
-
-    }
-
-footer {background-image
+footer {background-image:url(/img/Tarja_superior.png)
         position: absolute;
         bottom: 0px;
     }
 
 nav{
-    position: absolute;
+    position: relative;
     top: 20px;   
     
