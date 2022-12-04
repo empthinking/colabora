@@ -1,0 +1,42 @@
+body {
+    background-color: white;
+    min-width: 325px;
+    max-width: 100%;
+    margin: 0px;
+}
+
+header{
+    background-image:url(/imagens/Tarja\ superior.png);
+
+ 
+    
+}
+
+
+.tamanho_das_tarjas{
+    width: 1920px;
+    height: 150px;
+}
+img {
+        min-width: 320px;
+        max-width: 100%;
+
+    }
+
+footer {
+        position: absolute;
+        bottom: 0px;
+    }
+
+nav{
+    position: absolute;
+    top: 20px;
+    
+}
+#logo{
+    display: 
+    width: 50px;
+
+
+    
+}
