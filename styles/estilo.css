@@ -6,7 +6,12 @@ body {
 }
 
 header{
-    background-image:url(/imagens/Tarja\ superior.png);
+    background-image:url(/img/Tarja\ superior.png);
+    justify-content: space-around;
+    
+
+
+
 
  
     
@@ -17,26 +22,18 @@ header{
     width: 1920px;
     height: 150px;
 }
-img {
-        min-width: 320px;
+
+        min-width: 10px;
         max-width: 100%;
 
     }
 
-footer {
+footer {background-image
         position: absolute;
         bottom: 0px;
     }
 
 nav{
     position: absolute;
-    top: 20px;
+    top: 20px;   
     
-}
-#logo{
-    display: 
-    width: 50px;
-
-
-    
-}
