@@ -6,16 +6,29 @@ body {
 }
 
 header{
-    background-image:url(/img/Tarja\ superior.png);
-    justify-content: space-around;    
+    
+    background-image:url(/img/Tarja_superior.png); 
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+    width: 100%;
+       
 }
 
 footer {background-image:url(/img/Tarja_superior.png)
+
         position: absolute;
         bottom: 0px;
+        
     }
 
 nav{
-    position: relative;
-    top: 20px;   
-    
+    position: absolute;
+    top: 20px;  
+
+}
+
+.tarja_superior{
+    width: 100%;
+    height: auto;
+}
