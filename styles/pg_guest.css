@@ -16,8 +16,9 @@ body{
 
 #tarja_superior{
     background-image: url(../img/tarja_superior_alt.png);
-    height: 250px;
+    height: 180px;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 header{
     display: flex;
