@@ -1,34 +1,31 @@
-body {
-    background-color: white;
-    min-width: 325px;
-    max-width: 100%;
-    margin: 0px;
+*{
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+     
 }
 
 header{
-    
-    background-image:url(/img/Tarja_superior.png); 
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-
-    width: 100%;
-       
+    background-image: url(/img/tarja_superior.png);
+   
 }
 
-footer {background-image:url(/img/Tarja_superior.png)
 
-        position: absolute;
-        bottom: 0px;
-        
-    }
-
-nav{
-    position: absolute;
-    top: 20px;  
-
+main{
+    background-color:white;
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 30vh; 0;
+   
 }
-
-.tarja_superior{
-    width: 100%;
-    height: auto;
+footer{
+    background-color: green;
 }
