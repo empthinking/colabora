@@ -15,19 +15,32 @@ header{
 }
 
 main{
-    background-color:rgb(192, 185, 185);
+    background-color:fff(26, 212, 169);
     width: 100vw;
     flex-grow: 1;
     display: flex;
-    text-align: center;
-    
-   
+     
 }
-main h1{
-    display: block;
-    margin: auto;
 
+.seção1{    
+    background-color: #D9D9D9;
+    width: 20vw;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+;
 }
+
+.seção2{
+    background-color: rgb(40, 237, 53);
+    width: 80vw;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+
+        
+}
+
 
 footer{
     background-color: green;
