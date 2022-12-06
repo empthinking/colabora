@@ -7,25 +7,28 @@
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-     
+    min-height: 100vh;  
 }
 
-header{
-    background-image: url(/img/tarja_superior.png);
+header{   
    
 }
 
-
 main{
-    background-color:white;
+    background-color:rgb(192, 185, 185);
+    width: 100vw;
     flex-grow: 1;
     display: flex;
     text-align: center;
-    margin: auto;
-    padding: 30vh; 0;
+    
    
 }
+main h1{
+    display: block;
+    margin: auto;
+
+}
+
 footer{
     background-color: green;
 }
