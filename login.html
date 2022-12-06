@@ -4,17 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/login_page.css">
     <title>Login</title>
+    <style>
+        body{
+            background-color: #33F366;
+        }
+        #login_box{
+            background-color: #D3FFD0;
+            border-radius: 4px;
+            box-shadow: 1px 1px 3px 2px black;
+            padding:  10px 5px 20px 5px;
+            margin: 30px 300px 50px 300px;
+        }
+        #login_box > p{
+            text-align: center;
+        }
+        img{
+            margin: auto;
+            display: block; 
+        }
+        button{
+            display: block;
+            border-radius: 4px;
+            margin: 10px auto;
+            width: 90%;
+            height: 30px;
+            cursor: pointer;
+        }
+        #login_button{
+            background-color: #23E44D;
+            border: none;
+            color: white;
+        }
+        #login_button:hover{
+            background-color: green;
+        }
+        #sign_in_button{
+            border: 1px solid#1E2772;
+        }
+        
+        input{
+            border: none;
+            border-radius: 2px;
+            display: block;
+            width: 90%;
+            height: 30px;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div id="login_box">
         <img src="img/logo_2.png" alt="logo">
         <p>Área de login</p>
         <div id="login_input">
+            <form action="#" >
             <p>Email</p>
-            
-
+            <input type="text" class="box" placeholder="Email">
+            <p>Senha</p>
+            <input type="text" class="box" placeholder="Senha">
+            <a href="#"><p>Esqueceu sua senha?</p></a>
+            <button id="login_button">Entrar</button>
+            </form>
+            <button id="sign_in_button">Cadastre-se</button>
         </div>
 
     </div>
