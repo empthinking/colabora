@@ -13,7 +13,7 @@
             background-color: #D3FFD0;
             border-radius: 4px;
             box-shadow: 1px 1px 3px 2px black;
-            padding:  10px 5px 20px 5px;
+            padding:  10px  5px;
             margin: 30px 350px 50px 350px;
         }
         #login_box > p{
@@ -24,12 +24,14 @@
             display: block; 
         }
         button{
+            cursor: pointer;
+        }
+        button, input {
             display: block;
             border-radius: 4px;
+            width: 600px;
+            height: 35px;
             margin: 10px auto;
-            width: 90%;
-            height: 30px;
-            cursor: pointer;
         }
         #login_button{
             background-color: #23E44D;
@@ -45,16 +47,23 @@
         
         input{
             border: none;
-            border-radius: 2px;
-            display: block;
-            width: 90%;
-            height: 30px;
-            margin: auto;
-	    outline: none;
+            outline: none;
         }
         a{
             text-decoration: none;
         }
+        @media screen and (max-width: 600px) {
+                  
+        #login_box{
+            margin: auto;
+            padding: 30px;
+        }
+        input, button{
+            width: 100%;
+        }
+            
+        }
+            
     </style>
 </head>
 <body>
