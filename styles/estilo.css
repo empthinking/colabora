@@ -13,11 +13,11 @@ body{
 }
 
 
-{
-    background-color: #33F366;
-    width:100vw;
-    border-radius: 10px;
+header{    
+    width:98vw;
+    align-self: center;
     
+
 }
 nav img{
     padding: 5px;
@@ -42,17 +42,29 @@ main{
 
 .seção2{
     background-color: #D9D9D9;
-    width: 80vw;
+    width: 75vw;
     height: auto;
     border-radius: 20px;
     margin: 10px;
+    margin-right: 1vw;
 
         
 }
-
 footer{
-    background-color:#33F366;
-    text-align: center;
-    width: 100vw;
+    background-color: #63f253;
+    width: 95vw;
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
 
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-footer{
+    width: 25%;
+    padding: 0 15px;
 }
