@@ -55,7 +55,7 @@ main{
 .cont_filtro{
     background-color: rgba(241, 224, 224, 0.705);
     border: 1px solid;
-    height: 100vh;
+    height: 60vh;
     border-radius:20px;
     margin: 5px 5px 5px 5px;
 }
@@ -72,22 +72,14 @@ main{
     padding: 5px 0;  
    
 }
-.box_card{
-    border: 1px solid;
-    margin: 20px;
-    padding: 5px;
-}
-.card_cab{
-    border-bottom: 1px solid rgba(0,0,0,.125);
-    text-align:left ;
-}
 .card_main{
     display:flex;    
     justify-content: space-between;
     padding: 5px;
     border: 1px solid;
-    border: 5px;   
+    margin: 5px;
     position: relative;
+    top:10px;
 
 }
 footer{
