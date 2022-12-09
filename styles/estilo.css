@@ -76,12 +76,20 @@ main{
     display:flex;    
     justify-content: space-between;
     padding: 5px;
-    border: 1px solid;
     margin: 5px;
-    position: relative;
-    top:10px;
 
 }
+.box_card{
+    background-color: #f7fbf66c;
+    color: black;
+    margin: 20px;
+    padding: 5px;
+}
+.card_cab{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    text-align:left ;
+}
+
 footer{
     background-color: #63f253;
     width: 98vw;    
