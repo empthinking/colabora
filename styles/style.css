@@ -1,0 +1,11 @@
+.img-nav1{
+    border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%; 
+    max-width: 150px;
+    max-height: 100px;
+}
+.card-content{
+    display: flex;
+}
