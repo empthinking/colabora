@@ -28,6 +28,7 @@ header nav div {
 }
 header nav img{
     padding: 2px;
+        flex-direction: column;
     
 },
 
