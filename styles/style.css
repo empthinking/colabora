@@ -36,10 +36,10 @@ main {
   max-width: 1200px;
   margin: 50px auto;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   gap: 150px;
   padding: 0 40px;
+  flex-flow: row nowrap;
 }
 
 /* Mexendo nas imagens do produto */
