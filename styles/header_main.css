@@ -24,18 +24,22 @@ header {
 }
 
 /* Parte central */
-nav{
+header nav{
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-nav > a {
+header nav > a {
     display: block;
     text-decoration: none;
     color: black;
     margin: auto 20px;
+    cursor: point;
 
+}
+header nav > a:hover{
+  background-color: gray;
 }
 /* efeito dropdown */
 .dropdown{
@@ -113,7 +117,7 @@ nav > a {
 
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+header input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -123,7 +127,7 @@ input[type=text], input[type=password] {
   }
   
   /* Set a style for all buttons */
-  button {
+  header button {
     background-color: aqua;
     box-shadow: 1px 1px 1px black;
     color: black;
@@ -136,7 +140,7 @@ input[type=text], input[type=password] {
     border-radius: 10px;
   }
   
-  button:hover {
+  header button:hover {
     opacity: 0.8;
   }
   
@@ -224,6 +228,20 @@ input[type=text], input[type=password] {
   }
   
   /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 600px){
+    header{
+      flex-direction: column;
+    }
+    #logo{
+      width: 100%;
+    }
+    header nav{
+      background-color: aqua;
+    }
+    header button{
+      align-self: flex-end;
+    }
+  }
   @media screen and (max-width: 300px) {
     span.psw {
        display: block;
