@@ -83,7 +83,6 @@ main {
   background-color: var(--corSecundaria);
 }
 #carousel {
-  /* Ensure that the contents flow horizontally */
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
