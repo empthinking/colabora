@@ -3,50 +3,49 @@
     padding: 0px;
     box-sizing: ;
 }
-
+body{
+    background-image:linear-gradient(rgb(138, 242, 138), white);
+}
 .formulario{
     width: 100vw;    
     height: 100vh;
-    background-image:linear-gradient(rgb(138, 242, 138), white);
     text-align: center;
-    padding: 30px 0;
-}
-.marca_dagua{
-    width: 50vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    z-index: 1;
-    left: 25vw;
-    bottom: 25vh;
-    opacity: 10%;    
+    margin: auto;
+    margin-top:5vh;
 }
 
 fieldset{
-    width: 50vw;
+    width: 30vw;
     margin: auto;
     text-align: left;
     font-size: medium;
     padding: 10px;
-    }
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .alinhamento_fieldset{
-    display: flex;
-    text-align: left;
+  display: flex; 
+  justify-content: space-between; 
     
 }
+
 fieldset input{
     height: 20px;
 }
+
 ::placeholder{
     font-size: smaller;
 
 }
 
-#butão{
+#botão{
     text-align: center;
 }
-
-
+button {
+    background-color: rgba(132, 232, 152, 0.801);
+}
+button:hover{
+    color: aliceblue;
+}
 
 
