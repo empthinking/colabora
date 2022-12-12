@@ -115,5 +115,7 @@ min-width: 23%;
     font-size: 24px;
     flex-direction: column
 }
-
+.img-carousel{
+height: 200px;width: 190px
+}
 /* footer */
