@@ -42,7 +42,8 @@ fieldset input{
     text-align: center;
 }
 button {
-    background-color: rgba(132, 232, 152, 0.801);
+    background-color: black;
+    color: white;
 }
 button:hover{
     color: aliceblue;
