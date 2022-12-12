@@ -20,7 +20,7 @@ header {
 #logo {
     display: block;
     justify-self: flex-start;
-    background-color: gray;
+
 }
 
 /* Parte central */
@@ -235,10 +235,7 @@ header input[type=text], input[type=password] {
     #logo{
       width: 100%;
     }
-    header nav{
-      background-color: aqua;
-    }
-    header button{
+      header button{
       align-self: flex-end;
     }
   }
