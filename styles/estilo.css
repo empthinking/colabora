@@ -31,11 +31,32 @@ header nav img{
         flex-direction: column;
     
 }
-.pesquisa{
-    border-radius: 20px;
+.tam_input{
+    width: 30vw;
+    display: block;
+}
+.input_pesquisa{
+    padding: 5px;
+    color: #63f253;
+    width: 75vw;
+    border-radius: 20px 0 0 20px;
+}
+.input_button{
+    text-align: center;
+    width: 25vw;
+    padding: 5px;
+    border-radius: 0px 20px 20px 0;
+}
+.input_button:hover{
+    background-color: #cce1c9;
+    color: white
 }
 
-
+.login{ 
+    width: 25vw;
+    padding: 20px;
+    
+}
 main{
     background-color:fff(26, 212, 169);
     width: 100vw;
@@ -106,21 +127,11 @@ main{
 
 footer{
     background-color: #63f253;
-    width: 98vw;    
-    border-radius: 20px;
-    margin: auto;
-   
+    width: 100vw;
+    text-align: center;   
 }
 
-.row-footer{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.col-footer{
-    width: 25%;
-    padding: 0 15px;
-}
 @media only screen and (max-width: 1024px) {
     .aside_aba, .cab_filtro{
     width: 0vw;
