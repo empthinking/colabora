@@ -37,9 +37,9 @@ main {
   margin: 50px auto;
   display: flex;
   align-items: center;
-  gap: 150px;
+  gap: 50px;
   padding: 0 40px;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 /* Mexendo nas imagens do produto */
@@ -82,26 +82,16 @@ main {
   color: var(--corPrimaria);
   background-color: var(--corSecundaria);
 }
-#carousel {
-  overflow-x: auto;
+#container {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid rgb(213, 212, 212) 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
-  display: flex;
+  scroll-snap-type: x mandatory;
 }
 
-#carousel {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
 
-#carousel > div {
-  min-width: 25%;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-}
 
