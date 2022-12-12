@@ -6,18 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Colaborar</title>
     <link rel="stylesheet" href="styles/style.css">
-
+    <link rel="stylesheet" href="styles/header_main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <style>
-      section{
-        justify-self: flex-start;
-        
-      }
     </style>
-  </head> 
-
+ </head>
 <body>
-  <header>
+    <header style=" display: flex;">
+        <a href="#">
+            <img src="img/Ativo 1 black.png"  id="logo" alt="logo">
+        </a>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">PRODUTO</a>
+            <div class="dropdown">
+                <span>FALE CONOSCO</span>
+                <div class="dropdown_content">
+                    <a href="#" class="drop">SOBRE NÓS</a>
+                </div>
+            </div>
+        </nav>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        <div id="id01" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img/logo G (2).png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+            <label for="uname"><b>Usuário</b></label>
+            <input type="text" placeholder="Nome" name="uname" required>
+
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Senha" name="psw" required>
+                
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Manter conectado
+            </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+            <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+            </div>
+        </form>
+        </div>
+        <!-- <button id="login" onclick="login()">login</button>
+        <div id="perfil">
+            <img src="../img/perfil_exemplo.png" alt="perfil_exemplo">
+            <button id="logout" onclick="logout()">SAIR</button>
+        </div> -->
+    </header>
+    <script>
+        // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        function login(){
+            document.getElementById("login").style.display="none";
+            document.getElementById("perfil").style.display="block";
+        }
+        function logout(){
+            document.getElementById("perfil").style.display="none";
+            document.getElementById("login").style.display="block";
+        }
+    </script>
             <!-- fim do navbar  -->
         <main>
           <div class="card">
@@ -76,10 +137,6 @@
 
         </main>
             <!-- rodapé -->
-    <footer>
-      <img class="tar_superior" src="img/Tarja_inferior.png" alt="">
-      
-  </footer>
-
+    
 </body>
 </html>
