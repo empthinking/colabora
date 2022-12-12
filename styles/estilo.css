@@ -32,18 +32,19 @@ header nav img{
     
 }
 .tam_input{
-    width: 30vw;
+    width: 35vw;
     display: block;
+
 }
 .input_pesquisa{
     padding: 5px;
     color: #63f253;
-    width: 75vw;
+    width: 20vw;
     border-radius: 20px 0 0 20px;
 }
 .input_button{
-    text-align: center;
-    width: 25vw;
+    text-align: ;
+    width: 5vw;
     padding: 5px;
     border-radius: 0px 20px 20px 0;
 }
@@ -53,7 +54,7 @@ header nav img{
 }
 
 .login{ 
-    width: 25vw;
+    width: 20vw;
     padding: 20px;
     
 }
