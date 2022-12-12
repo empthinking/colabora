@@ -7,23 +7,27 @@
 .formulario{
     width: 100vw;    
     height: 100vh;
-    background-color: #D3FFD0;
+    background-image:linear-gradient(rgb(138, 242, 138), white);
     text-align: center;
     padding: 30px 0;
 }
-main div img{
-    width: 8vw;
+.marca_dagua{
+    width: 50vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    position: absolute;
+    z-index: 1;
+    left: 25vw;
+    bottom: 25vh;
+    opacity: 10%;    
 }
 
 fieldset{
     width: 50vw;
     margin: auto;
     text-align: left;
-    font-size: xx-small;
+    font-size: medium;
     padding: 10px;
     }
 .alinhamento_fieldset{
@@ -32,10 +36,10 @@ fieldset{
     
 }
 fieldset input{
-    height: 10px;
+    height: 20px;
 }
 ::placeholder{
-    font-size: 5px;
+    font-size: smaller;
 
 }
 

@@ -14,7 +14,6 @@ body{
 }
 
 header nav{
-    width:100vw;
     align-self: center;
     border-radius: 20px;
     width: 98vw;
@@ -31,7 +30,9 @@ header nav img{
         flex-direction: column;
     
 }
-
+.pesquisa{
+    border-radius: 20px;
+}
 
 
 main{
@@ -44,23 +45,26 @@ main{
 }
 
 .aside_aba{    
-    width: 25vw;
+    width: 15vw;
+    height:
+
 }
 .cab_filtro{
     background-color: #aaeda3;
     border: 1px solid;
     height: 5vh;
     text-align:center ;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     margin: 5px 5px 0px 5px;
 
 }
 .cont_filtro{
     background-color: rgba(241, 224, 224, 0.705);
     border: 1px solid;
-    height: 60vh;
-    border-radius:20px;
-    margin: 5px 5px 5px 5px;
+    height: 100vh;
+    border-radius:0 0 20px 20px;
+    margin: 0px 5px 5px 5px;
+
 }
 
 
