@@ -1,142 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Colaborar</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header_main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    </style>
- </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Colaborar</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header_main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </style>
+</head>
+
 <body>
-    <header style=" display: flex;">
-        <a href="#">
-            <img src="img/Ativo 1 black.png"  id="logo" alt="logo">
-        </a>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">PRODUTO</a>
-            <div class="dropdown">
-                <span>FALE CONOSCO</span>
-                <div class="dropdown_content">
-                    <a href="#" class="drop">SOBRE NÓS</a>
-                </div>
-            </div>
-        </nav>
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-        <div id="id01" class="modal">
-        
-        <form class="modal-content animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img/logo G (2).png" alt="Avatar" class="avatar">
-            </div>
-
-            <div class="container">
-            <label for="uname"><b>Usuário</b></label>
-            <input type="text" placeholder="Nome" name="uname" required>
-
-            <label for="psw"><b>Senha</b></label>
-            <input type="password" placeholder="Senha" name="psw" required>
-                
-            <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Manter conectado
-            </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-            <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
-            </div>
-        </form>
+  <header style=" display: flex;">
+    <a href="#">
+      <img src="img/Ativo 1 black.png" id="logo" alt="logo">
+    </a>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">PRODUTO</a>
+      <div class="dropdown">
+        <span>FALE CONOSCO</span>
+        <div class="dropdown_content">
+          <a href="#" class="drop">SOBRE NÓS</a>
         </div>
-        <!-- <button id="login" onclick="login()">login</button>
+      </div>
+    </nav>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+          <img src="img/logo G (2).png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Usuário</b></label>
+          <input type="text" placeholder="Nome" name="uname" required>
+
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Senha" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Manter conectado
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancelar</button>
+          <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+        </div>
+      </form>
+    </div>
+    <!-- <button id="login" onclick="login()">login</button>
         <div id="perfil">
             <img src="../img/perfil_exemplo.png" alt="perfil_exemplo">
             <button id="logout" onclick="logout()">SAIR</button>
         </div> -->
-    </header>
-    <script>
-        // Get the modal
-var modal = document.getElementById('id01');
+  </header>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
         modal.style.display = "none";
+      }
     }
-}
-        function login(){
-            document.getElementById("login").style.display="none";
-            document.getElementById("perfil").style.display="block";
-        }
-        function logout(){
-            document.getElementById("perfil").style.display="none";
-            document.getElementById("login").style.display="block";
-        }
-    </script>
-            <!-- fim do navbar  -->
-        <main>
-          <div class="card">
-            <picture class="imagemProduto">
-                <img src="img/perfil_exemplo.png" alt="Placeholder image">
-          
-            </picture>
-          </div>
-         <section>
-           <div class="field">
-            <label class="label">Titulo</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="nome do produto">
-            </div>
-          </div>
-          
-          <div class="field">
-            <label class="label">Categoria</label>
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>tipo 1</option>
-                  <option>tipo 2</option>
-                  <option>tipo 3</option>
-                  <option>tipo 4</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          
-          <div class="field">
-            <label class="label">Descrição</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Descrição do seu produto"></textarea>
-            </div>
-          </div>
-          
-          <div class="field">
-            <div class="control">
-              <label class="checkbox">
-                <input type="checkbox">
-                Eu concordo com os <a href="#">termos e condições</a>
-              </label>
-            </div>
-          </div>
-         
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-success is-rounded">Publicar</button>
-            </div>
-            <div class="control">
-              <button class="button is-link is-light">Cancelar</button>
-            </div>
-          </div>
-      </section>
+    function login() {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("perfil").style.display = "block";
+    }
+    function logout() {
+      document.getElementById("perfil").style.display = "none";
+      document.getElementById("login").style.display = "block";
+    }
+  </script>
+  <!-- fim do navbar  -->
+  <main>
+   <a><div class="card">
+      <picture class="imagemProduto">
+        <img src="img/ADICIONAR IMAGEM.png" alt="Placeholder image">
 
-        </main>
-            <!-- rodapé -->
-    
+      </picture>
+    </div></a>
+    <section>
+      <div class="field">
+        <label class="label">Titulo</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="nome do produto">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Categoria</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>tipo 1</option>
+              <option>tipo 2</option>
+              <option>tipo 3</option>
+              <option>tipo 4</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Descrição</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Descrição do seu produto"></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Eu concordo com os <a href="#">termos e condições</a>
+          </label>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-success is-rounded">Publicar</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancelar</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- rodapé -->
+
 </body>
+
 </html>
