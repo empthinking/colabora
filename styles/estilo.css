@@ -12,12 +12,12 @@ body{
     max-width: 1328px; 
     
 }
-#burger{width: 100vw;}
+
 
 header nav{
     align-self: center;
     border-radius: 20px;
-    width: 98vw;
+    width: 100vw;
     margin: auto;
     display: flex;
     
@@ -27,7 +27,7 @@ header nav div {
     
 }
 header nav img{
-    padding: 2px;
+    padding: 10px;
         flex-direction: column;
     
 }
@@ -38,20 +38,20 @@ header nav img{
 
 main{
     background-color:fff(26, 212, 169);
-    width: 98vw;
-    flex-grow: 1;
+    width: 100vw;
+    flex-grow:1;
     display: flex;
     margin: auto;
      
 }
 
 .aside_aba{    
-    width: 15vw;
-    height:
-
+    width: 20vw;
+    
 }
 .cab_filtro{
     background-color: #aaeda3;
+    min-width: 20vw;
     border: 1px solid;
     height: 5vh;
     text-align:center ;
@@ -60,6 +60,7 @@ main{
 
 }
 .cont_filtro{
+    min-width: 20vw;
     background-color: rgba(241, 224, 224, 0.705);
     border: 1px solid;
     height: 100vh;
@@ -68,17 +69,22 @@ main{
 
 }
 
-.seção2{
-    background-color: #D9D9D9;
-    width: 75vw;
-    height: auto;
-    margin-left: 10px;
+#seção2{
+    background-color: #D9D9D9;   
+    margin:auto ;
     border: 5px solid white;
     border-radius: 20px;  
     text-align: center;
     padding: 5px 0;  
-   
+    width: 75vw;
+    
+       
 }
+.box_card:hover{
+    background-color: #63f253;
+    color: white;
+}
+
 .card_main{
     display:flex;    
     justify-content: space-between;
@@ -95,6 +101,7 @@ main{
 .card_cab{
     border-bottom: 1px solid rgba(0,0,0,.125);
     text-align:left ;
+    
 }
 
 footer{
@@ -114,14 +121,20 @@ footer{
     width: 25%;
     padding: 0 15px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
     .aside_aba, .cab_filtro{
     width: 0vw;
-    display:none;        
-    
+    display:none;    
     }
-    .seção2{
+   *{
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+   }
+    #burger{width: 100vw;}
+
+    #seção2{
         width: 100vw;
-        margin: auto;
+        display: block;
     }
-  }
+}
