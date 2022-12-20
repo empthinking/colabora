@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colabora</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -13,6 +14,7 @@
             <img src="../img/Ativo 1 black.png"  id="logo" alt="logo">
         </a>
         <nav>
+            
             <a href="#">HOME</a>
             <a href="#">PRODUTO</a>
             <div class="dropdown">
@@ -23,10 +25,10 @@
             </div>
             <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..."/>
-               <figure><img src="/icons/lupa.png" id="btnBusca" alt="Buscar"/></figure>
+                <span class="material-symbols-outlined">search</span>
             </div>
         </nav>
-        <a href="#"><button onclick="style.display='block'" style="width:auto;">inscreva</button></a>
+        <button onclick="style.display='block'" style="width:auto;"><a href="#">inscreva</a></button>
 
          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
@@ -51,11 +53,15 @@
             </label>
             </div>
 
-            <div class="container" style="background-color:#f1f1f1">
+            <div class="container" style="background-color:#f1f1f179">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
             <span class="psw"><a href="#">Esqueceu sua senha?</a></span>
             </div>
         </form>
+    
+        </div>
+        <div>
+        <span class="material-symbols-outlined size-48">menu</span>
         </div>
         <!-- <button id="login" onclick="login()">login</button>
         <div id="perfil">

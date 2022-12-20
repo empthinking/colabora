@@ -60,7 +60,7 @@ header nav #divBusca {
   width: 300px;
   margin: 0% 28px;
 }
-header nav #txtBusca {
+header nav #divBusca #txtBusca {
   float: left;
   background-color: transparent;
   font-style: italic;
@@ -70,15 +70,14 @@ header nav #txtBusca {
   width: 260px;
   margin: 5px 0px;
 }
-header nav #btnBusca {
-  height: 10%;
-  width: 10%;
+header nav #divBusca .material-symbols-outlined {
+  font-size: 35px;
 }
 header input[type=text],
 header input[type=password] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 7px;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -89,11 +88,12 @@ header button {
   font-style: normal;
   color: #ffffff;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px 5px;
   border: none;
   width: 100%;
   align-self: center;
   border-radius: 60px;
+  display: block;
 }
 header button:hover {
   opacity: 0.8;
@@ -166,6 +166,12 @@ header .animate {
   animation: animatezoom 0.6s;
 }
 
+
+span.size-48 {
+  font-size: 48px;
+  font-variation-settings: "OPSZ" 48;
+}
+
 /* efeito dropdown */
 /* links do dropdown */
 .drop {
@@ -190,18 +196,39 @@ header .animate {
   }
 }
 /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 1200px) {
+  #divBusca {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
   header {
     flex-direction: column;
+    display: block;
   }
-  #logo {
+  header #logo {
+    margin: auto;
+  }
+  header nav {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  header .logo {
     width: 100%;
+  }
+  header span .material-symbols-outlined {
+    display: block;
   }
   header button {
     align-self: flex-end;
   }
 }
 @media screen and (max-width: 300px) {
+  header {
+    display: block;
+  }
   span.psw {
     display: block;
     float: none;
