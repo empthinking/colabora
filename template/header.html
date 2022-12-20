@@ -21,8 +21,14 @@
                     <a href="#" class="drop">SOBRE NÓS</a>
                 </div>
             </div>
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+               <figure><img src="/icons/lupa.png" id="btnBusca" alt="Buscar"/></figure>
+            </div>
         </nav>
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <a href="#"><button onclick="style.display='block'" style="width:auto;">inscreva</button></a>
+
+         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
         <div id="id01" class="modal">
         
@@ -39,7 +45,7 @@
             <label for="psw"><b>Senha</b></label>
             <input type="password" placeholder="Senha" name="psw" required>
                 
-            <button type="submit">Login</button>
+            <button type="submit" >Login</button><br>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Manter conectado
             </label>
@@ -47,7 +53,7 @@
 
             <div class="container" style="background-color:#f1f1f1">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-            <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+            <span class="psw"><a href="#">Esqueceu sua senha?</a></span>
             </div>
         </form>
         </div>

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 header {
@@ -8,6 +9,11 @@ header {
   width: 100%;
   justify-content: space-between;
   /* Lateral esquerda */
+  /* Extra styles for the cancel button */
+  /* Center the image and position the close button */
+  /* The Modal (background) */
+  /* Modal Content/Box */
+  /* The Close Button (x) */
 }
 header #logo {
   display: block;
@@ -34,7 +40,6 @@ header nav .dropdown_content {
   position: absolute;
   background-color: #f9f9f9;
   max-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
 }
@@ -44,58 +49,33 @@ header nav .dropdown:hover .dropdown_content {
   justify-content: center;
 }
 header nav .dropdown_content:hover {
-  background-color: aqua;
+  background-color: #11eb7a;
 }
 header nav .dropdown_content:hover .drop {
   color: white;
 }
-
-/* efeito dropdown */
-/* links do dropdown */
-.drop {
-  text-decoration: none;
-  color: black;
+header nav #divBusca {
+  border: solid 1px;
+  border-radius: 15px;
+  width: 300px;
+  margin: 0% 28px;
 }
-
-/* Lateral direita */
-/* #login{
-    background-color: aqua;
-    border: none;
-    border-radius: 10px;
-    align-self: center;
-    min-height: 40px;
-    min-width: 100px;
-    cursor: pointer;
-  }
-
-
-  #login:hover{
-    background-color: gray;
-    color: white;
-  }
-
-  #logout{
-    border: none;
-    border-radius: 10x;
-    width: 100%;
-    background-color: white;
-    cursor: pointer;
-  }
-  #logout:hover{
-    background-color: gray;
-  }
-#perfil{
-    display: none;
-    flex-direction: column;
+header nav #txtBusca {
+  float: left;
+  background-color: transparent;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 8px;
+  width: 260px;
+  margin: 5px 0px;
 }
-#perfil img{
-    display: block;
-    width: 70px;
-    border-radius: 50%;
-} */
-/* Full-width input fields */
+header nav #btnBusca {
+  height: 10%;
+  width: 10%;
+}
 header input[type=text],
-input[type=password] {
+header input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -103,55 +83,43 @@ input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
-/* Set a style for all buttons */
 header button {
-  background-color: aqua;
-  box-shadow: 1px 1px 1px black;
-  color: black;
+  background-color: #40FF9C;
+  font: bold 16px Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #ffffff;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  cursor: pointer;
   width: 100%;
   align-self: center;
-  border-radius: 10px;
+  border-radius: 60px;
 }
-
 header button:hover {
   opacity: 0.8;
 }
-
-/* Extra styles for the cancel button */
-.cancelbtn {
+header .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  background-color: #f44336;
+  background-color: #40FF9C;
 }
-
-/* Center the image and position the close button */
-.imgcontainer {
+header .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
 }
-
-img.avatar {
+header img.avatar {
   width: 40%;
   /* border-radius: 50%; */
 }
-
-.container {
+header .container {
   padding: 16px;
 }
-
-span.psw {
+header span.psw {
   float: right;
   padding-top: 16px;
 }
-
-/* The Modal (background) */
-.modal {
+header .modal {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -172,19 +140,15 @@ span.psw {
   /* Black w/ opacity */
   padding-top: 60px;
 }
-
-/* Modal Content/Box */
-.modal-content {
+header .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
-  /* 5% from the top, 15% from the bottom and centered */
+  /* 5% from the top, 15% from the bottom and centergba(94, 239, 154, 0.77) */
   border: 1px solid #888;
   width: 40%;
   /* Could be more or less, depending on screen size */
 }
-
-/* The Close Button (x) */
-.close {
+header .close {
   position: absolute;
   right: 25px;
   top: 0;
@@ -192,17 +156,21 @@ span.psw {
   font-size: 35px;
   font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
-  color: red;
+header .close:hover,
+header .close:focus {
+  color: rgba(94, 239, 154, 0.77);
   cursor: pointer;
 }
-
-/* Add Zoom Animation */
-.animate {
+header .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s;
+}
+
+/* efeito dropdown */
+/* links do dropdown */
+.drop {
+  text-decoration: none;
+  color: black;
 }
 
 @-webkit-keyframes animatezoom {
