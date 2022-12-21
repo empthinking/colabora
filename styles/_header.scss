@@ -1,0 +1,298 @@
+$cor-pricipal: #33f366;
+$cor-sercudaria: #11eb7a;
+$cor-botao: #40FF9C;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background-color: $cor-pricipal;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  /* Lateral esquerda */
+  #logo {
+    display: block;
+    justify-self: flex-start;
+
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      margin: auto 20px;
+      cursor: point;
+
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown_content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      max-width: 160px;
+
+      padding: 12px 16px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown_content {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+
+    }
+
+    .dropdown_content:hover {
+      background-color: $cor-sercudaria;
+    }
+
+    .dropdown_content:hover .drop {
+      color: white;
+    }
+    // pequisa
+    #divBusca{
+ 
+      border:solid 1px;
+      border-radius:15px;
+      width:300px;
+      margin: 0% 28px;
+    
+      #txtBusca{
+      float:left;
+      background-color:transparent;
+      font-style:italic;
+      font-size:18px;
+      border:none;
+      height:8px;
+      width:260px;  
+      margin: 5px 0px;  
+    }
+    .material-symbols-outlined{
+      font-size: 35px;
+    }
+  }
+
+  }
+
+  
+
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 7px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: $cor-botao;
+    font: bold 16px Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border: none;
+    width: 100%;
+    align-self: center;
+    border-radius: 60px;
+    display: block;
+
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: $cor-botao;
+  }
+
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+
+  img.avatar {
+    width: 40%;
+    /* border-radius: 50%; */
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centergba(94, 239, 154, 0.77) */
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: rgba(94, 239, 154, 0.77);
+    cursor: pointer;
+  }
+
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+
+}
+
+span.size-40 {
+  font-size: 40px;
+  font-variation-settings: 'OPSZ' 40;
+}
+span.size-48 {
+  font-size: 48px;
+  font-variation-settings: 'OPSZ' 48;
+}
+
+
+// header nav>a:hover {
+//   background-color: gray;
+// }
+
+/* efeito dropdown */
+
+/* links do dropdown */
+
+.drop {
+  text-decoration: none;
+  color: black;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 1200px) {
+  #divBusca{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    display: block;
+    #logo{
+      margin: auto;
+    }
+    nav{
+      display: none;
+    }
+    button{
+
+      display: none;
+    }
+
+  .logo {
+    width: 100%;
+  }
+  span {
+    .material-symbols-outlined{
+      display: block;
+
+    }
+}}
+
+  header button {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header{
+    display: block;
+  }
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
