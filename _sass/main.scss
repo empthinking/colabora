@@ -5,10 +5,10 @@
 // You can easily customize Bulma with your own variables.
 // Just uncomment the following block to see the result.
 
-/*
+
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
-
+/*
 // 2. Set your own initial variables
 // Update the blue shade, used for links
 $blue: #06bcef;
@@ -25,5 +25,7 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
+$primary: #63f253;
+$footer-background-color: $primary;
 
 @import "../node_modules/bulma/bulma";
