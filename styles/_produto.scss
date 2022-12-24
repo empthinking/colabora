@@ -1,0 +1,78 @@
+
+    $fontPrincipal: "Kumbh Sans";
+    $corPrimaria2: rgb(7, 250, 68);
+$corSecundaria: hsl(25, 100%, 94%);
+    $corNavegacao2: hsl(223, 64%, 98%);
+    $corNavegacaoHover2: hsl(220, 14%, 75%);
+  
+
+#prod {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 40px;
+    flex-flow: row wrap;
+
+    .imagens {
+        img {
+            border-radius: 20px;
+        }
+
+        .imagemProduto {
+            img {
+                width: 400px;
+            }
+        }
+        .imagemSeletor img {
+            width: 80px;
+            margin: 20px 8px;
+        }
+    }
+
+    /* Mexendo no conteudo do produto */
+
+    .conteudo {
+        max-width: 600px;
+
+        h2 {
+            color: $corPrimaria2;
+        }
+
+        .precoDesconto {
+            font-weight: 700;
+            font-size: 1.7rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        precoDesconto span {
+                padding: 5px 10px;
+                border-radius: 20px;
+                font-size: 1rem;
+                color: $corPrimaria;
+                background-color: $corSecundaria;
+            }
+        }
+    
+#carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  div {
+  min-width: 23%;
+      min-height: 171%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      font-size: 24px;
+      flex-direction: column
+  }
+  .img-carousel{
+  height: 200px;width: 190px
+  }}}
