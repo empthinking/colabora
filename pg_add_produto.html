@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Portal Colaborar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <script src="_javascript/main.js"></script>
+    <script src="https://kit.fontawesome.com/0280b9824e.js" crossorigin="anonymous"></script>
+    
   </head>
 
 <body>
   <header>
 
       <!-- Barra de navegação BULMA -->
-    <nav class=" " role="navigation" aria-label="main navigation">
+    <nav class=" " role="navigation" aria-label="main navigation"><nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand" id="burger">
         <a  href="index.html">
           <img src="img/Ativo 1 black.png" width="200px" height="">
@@ -32,7 +36,7 @@
                 HOME
               </a>
 
-              <a class="navbar-item" href="pg_produto_alte.html">
+              <a class="navbar-item" href="#">
                 PRODUTOS
               </a>
 
@@ -48,7 +52,7 @@
             </div>
             </div>
             </div>
-            <div class="navbar-item tam_input">
+            <div class="navbar-item">
               <input class="input_pesquisa" type="search" name="" id="" placeholder="Buscas produtos, vendedor e muito mais...">
               <input class="input_button" type="submit" value="Procurar">
             </div> 
@@ -95,17 +99,27 @@
           </form>
       
           </div>
-
-  </header>
-
+    </nav></header>
   <!-- fim do navbar  -->
-  <main id="prod">
-   <a><div class="card">
-      <picture class="imagemProduto">
-        <img src="img/ADICIONAR IMAGEM.png" alt="Placeholder image">
-
-      </picture>
-    </div></a>
+  <main id="prod" class="m2">
+   <div class="car">
+    <div class="file has-name is-boxed">
+      <label class="file-label">
+        <input class="file-input" type="file" name="resume">
+        <span class="file-cta">
+          <span class="file-icon">
+            <i class="fas fa-upload"></i>
+          </span>
+          <span class="file-label">
+          adicionar imagem 
+          </span>
+        </span>
+        <span class="file-name">
+          Screen Shot 2017-07-29 at 15.54.25.png
+        </span>
+      </label>
+    </div>
+    </div>
     <section>
       <div class="field">
         <label class="label">Titulo</label>

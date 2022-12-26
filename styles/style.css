@@ -156,10 +156,8 @@ span.size-48 {
   align-items: center;
   gap: 50px;
   padding: 0 40px;
+  flex-wrap: wrap;
   /* Mexendo no conteudo do produto */
-}
-#prod .m2 {
-  flex-wrap: nowrap;
 }
 #prod .imagens img {
   border-radius: 20px;

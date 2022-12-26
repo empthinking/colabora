@@ -2,7 +2,7 @@ $fontPrincipal: "Kumbh Sans";
 $corPrimaria: rgb(7, 250, 68);
 $corSecundaria: hsl(25, 100%, 94%);
 $corNavegacao: hsl(223, 64%, 98%);
-$corNavegacaoHover: hsl(220, 14%, 75%);
+$corNavegacaoHover: hsl(221, 27%, 25%);
 
 
 #prod {
@@ -12,9 +12,7 @@ $corNavegacaoHover: hsl(220, 14%, 75%);
     align-items: center;
     gap: 50px;
     padding: 0 40px;
-    .m2{
-    flex-wrap: nowrap;}
-
+    flex-wrap: wrap;
     .imagens {
         img {
             border-radius: 20px;

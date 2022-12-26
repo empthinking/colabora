@@ -4,177 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuario</title>
-    <style>
-        body{
-            margin: 0px;
-        }
-        header{
-            background-color: #33F366;
-            display: flex;
-        }
-        main{
-            height: 1000px;
-            margin: 0px;
-        }
-        #perfil > img{
-            display: block;
-            width: 50px;
-            margin: auto;
-            border: 5px solid #D9D9D9;
-            border-radius: 50%;
-        }
-        #perfil > p{
-            color: #AAA5A5
-        }
-        #logo{
-            margin: auto;
-        }
-        nav{
-            width: 15%;
-        }
-        nav > a{
-            color: #ffff;
-            font-weight: bolder;
-            font-size: 20px;
-            text-decoration: none;
-            margin: auto 10px;
-            display: inline;
-        }
-        form{
-            width: 40%;
-            height: 40%;
-            background-color: #DDDDDD;
-            border-radius: 20px;
-            margin: 40px auto;
-            display: flex;
-            flex-flow: column nowrap;
-        }
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portal Colaborar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <script src="_javascript/main.js"></script>
+    <script src="https://kit.fontawesome.com/0280b9824e.js" crossorigin="anonymous"></script>
+    
+  </head>
 
-        input, button{
-            display: block;
-            box-shadow: 1px 1px 1px black;
-            border-radius: 4px;
-        }
-        input{
-            width: 50%;
-            height: 40px;
-            margin: 10px auto;
-            border: none;
-            
-        }
-        button{
-            border: none;
-            background-color: #87E79C;
-            color: black;
-            margin: 10px;
-            width: 40%;
-            height: 10%;
-            cursor: pointer;
-        }
-        button:hover{
-            background-color: green;
-            color: white;
-        }
-        #botao_anunciar{
-            height: 20%;
-        }
-        form p{
-            text-shadow: 1px black;
-        }
-
-        @media screen and (max-width:600px) {
-
-            header{
-                flex-wrap: wrap;
-                border-radius: 10px;
-                margin: 5px
-            }
-
-            form{
-                width: 100%;
-            }
-            nav a{
-                display: block;
-                margin: 10px;
-            }
-        }
-    </style>
-</head>
 <body>
-    <header>
+  <header>
 
-        <!-- Barra de navegação BULMA -->
-      <nav class=" " role="navigation" aria-label="main navigation">
-        <div class="navbar-brand" id="burger">
-          <a  href="index.html">
-            <img src="img/Ativo 1 black.png" width="200px" height="">
-          </a>
-  
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-  
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
-                  HOME
-                </a>
-  
-                <a class="navbar-item" href="pg_produto_alte.html">
-                  PRODUTOS
-                </a>
-  
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                  FALE CONOSCO
-                </a>
-  
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                   SOBRE NÓS
-                </a>
-              </div>
-              </div>
-              </div>
-              <div class="navbar-item tam_input">
-                <input class="input_pesquisa" type="search" name="" id="" placeholder="Buscas produtos, vendedor e muito mais...">
-                <input class="input_button" type="submit" value="Procurar">
-              </div> 
-  
-  
-              <div class="navbar-end login">
-                <div class="navbar-item">
-                    <div class="buttons">
-                      <a class="button is-primary" href="cadastro.html">
-                        <strong>CRIE SUA CONTA</strong>
-                      </a>
-                      <a class="button is-light" href="login.html">
-                        ACESSE SUA CONTA
-                      </a>
-                    </div>
+      <!-- Barra de navegação BULMA -->
+    <nav class=" " role="navigation" aria-label="main navigation"><nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand" id="burger">
+        <a  href="index.html">
+          <img src="img/Ativo 1 black.png" width="200px" height="">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+              <a class="navbar-item" href="index.html">
+                HOME
+              </a>
+
+              <a class="navbar-item" href="#">
+                PRODUTOS
+              </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                FALE CONOSCO
+              </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                 SOBRE NÓS
+              </a>
+            </div>
+            </div>
+            </div>
+            <div class="navbar-item">
+              <input class="input_pesquisa" type="search" name="" id="" placeholder="Buscas produtos, vendedor e muito mais...">
+              <input class="input_button" type="submit" value="Procurar">
+            </div> 
+
+
+            <div class="navbar-end login">
+              <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary" href="cadastro.html">
+                      <strong>CRIE SUA CONTA</strong>
+                    </a>
+                      <button class="button is-light"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">ACESSE SUA CONTA</button>
                   </div>
                 </div>
               </div>
-            </nav>
+            </div>
+          </nav>
+          
+        <div id="id01" class="modal">
+        
+          <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="../img/logo G (2).png" alt="Avatar" class="avatar">
+              </div>
   
-    </header>
-    <header>
-        <div id="perfil">
-            <img src="img/perfil_exemplo.png">
-            <p><b>Nome de Usuario</b></p>
-        </div>
-        <div id="logo">
-        <a href="index.html" id="logo"><img src="img/logo.png" alt="logo"></a>
-        </div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="#">Sair</a>
-        </nav>
-    </header>
+              <div class="container">
+              <label for="uname"><b>Usuário</b></label>
+              <input type="text" placeholder="Nome" name="uname" required>
+  
+              <label for="psw"><b>Senha</b></label>
+              <input type="password" placeholder="Senha" name="psw" required>
+                  
+              <button type="submit" >Login</button><br>
+              <label>
+                  <input type="checkbox" checked="checked" name="remember"> Manter conectado
+              </label>
+              </div>
+  
+              <div class="container" style="background-color:#f1f1f179">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+              <span class="psw"><a href="#">Esqueceu sua senha?</a></span>
+              </div>
+          </form>
+      
+          </div>
+    </nav></header>
+  <!-- fim do navbar  -->
     <main>
         <form action="#">
             <input type="text" placeholder="Nome">
@@ -184,6 +110,39 @@
             <button><b>Histórico</b></button>
            <button id="botao_anunciar"><b>Anunciar Produto</b></button>
         </form>
-    </main>
-</body>
+      </main>
+
+    <!-- rodapé -->
+    <footer>
+
+        <div class="estilo-footer">
+            <div class="row-footer">
+                <br>
+                <small>&copy;UEPA2022</small>
+                <br><br>
+            </div>
+        </div>
+
+    </footer>
+    </body>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // Whegit pull
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        function login() {
+            document.getElementById("login").style.display = "none";
+            document.getElementById("perfil").style.display = "block";
+        }
+        function logout() {
+            document.getElementById("perfil").style.display = "none";
+            document.getElementById("login").style.display = "block";
+        }
+    </script>
 </html>
