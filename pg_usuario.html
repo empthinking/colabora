@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Portal Colaborar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="_javascript/main.js"></script>
     <script src="https://kit.fontawesome.com/0280b9824e.js" crossorigin="anonymous"></script>
-    
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 40
+      }
+      </style>
   </head>
+  
 
 <body>
   <header>
@@ -86,7 +95,7 @@
               <label for="psw"><b>Senha</b></label>
               <input type="password" placeholder="Senha" name="psw" required>
                   
-              <button type="submit" >Login</button><br>
+              <button type="submit" id="hrv">Login</button><br>
               <label>
                   <input type="checkbox" checked="checked" name="remember"> Manter conectado
               </label>
@@ -99,18 +108,63 @@
           </form>
       
           </div>
-    </nav></header>
+  </header>
   <!-- fim do navbar  -->
-    <main>
-        <form action="#">
-            <input type="text" placeholder="Nome">
-            <input type="text" placeholder="Apelido">
-            <input type="text" placeholder="Telefone">
-            <input type="text" placeholder="Endereço">
-            <button><b>Histórico</b></button>
-           <button id="botao_anunciar"><b>Anunciar Produto</b></button>
-        </form>
-      </main>
+    <main id="perso" >
+      <div class="box">
+        <h3 class="title is-3">Perfil</h3>
+        <figure class="image is-256x256" >
+          <img id="perfil" src="img/perfil.png">
+        </figure>
+        <div>
+          <h3 class="title is-3">Nome</h3>
+          <h3 class="subtitle is-3">.</h3>
+          <h3 class="title is-3">Apelido</h3>
+          <h3 class="subtitle is-3">.</h3>
+          <div id="btp">
+            <h3 class="title is-3">CPF</h3>
+            <h3 class="subtitle is-3">999.999.999-99</h3>
+            
+
+        <button class="button is-large is-responsive">
+          Historico
+           </button>
+        <button class="button is-large is-responsive">
+            adiciona<br>produtos
+          </button>
+          <button class="button is-large is-responsive">
+            meus<br>produtos
+          </button>
+          <span class="material-symbols-outlined">
+            edit
+            </span>
+        </div>
+      </div>
+      </div>
+      <div class="box">
+        <h2 class="title is-2">Contato</h3>
+        <h3 class="title is-3">telefone/whatsapp</h2>
+        <h3 class="subtitle is-3">(91) 0000-000</h3>
+        <h2 class="title is-2">Email</h2>
+        <h3 class="subtitle is-3">colabora@.com</h3z>
+          <span class="material-symbols-outlined">
+            edit
+            </span>
+      </div>
+      <div class="box">
+        <h2 class="title is-2">Endereço</h3>
+          <h3 class="title is-3">Cidade</h2>
+          <h3 class="subtitle is-3">XXXXXXXX</h3>
+          <h3 class="title is-3">CEP</h3>
+          <h3 class="subtitle is-3">XXXXXX-XXX</h3z>
+            <h3 class="title is-3">Bairro</h3>
+            <h3 class="subtitle is-3">XXXXXXXX</h3z>
+              <span class="material-symbols-outlined">
+                edit
+                </span>
+        </div>
+      </div>
+    </main>
 
     <!-- rodapé -->
     <footer>

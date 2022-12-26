@@ -2,6 +2,7 @@
 @import 'produto';
 @import 'login-cad';
 
+
 $cor_fund1: #D9D9D9;
 $letra1: black;
 $cor-sercudaria: #63f253;
@@ -20,6 +21,7 @@ body {
     max-width: 1328px;
 
     main {
+    #mbl{
         width: 100vw;
         flex-grow: 1;
         display: flex;
@@ -87,7 +89,22 @@ body {
         }
     }
 }
-
+}
+.precoDesconto {
+    font-weight: 700;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .precoDesconto span {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: $cor-sercudaria;
+  }
   
 #carousel {
     overflow-x: auto;

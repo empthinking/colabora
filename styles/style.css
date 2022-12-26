@@ -39,7 +39,7 @@ input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+#hrv {
   background-color: #40FF9C;
   font: bold 16px Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -189,6 +189,16 @@ span.size-48 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+#perso {
+  margin: 4% 4% 82px;
+}
+#perso #perfil {
+  width: 50%;
+  margin: auto;
+  border-radius: 113px;
+  padding: 32px;
+}
+
 * {
   padding: 0px;
   border: 0px;
@@ -201,16 +211,16 @@ body {
   min-height: 100vh;
   max-width: 1328px;
 }
-body main {
+body main #mbl {
   width: 100vw;
   flex-grow: 1;
   display: flex;
   margin: auto;
 }
-body main .aside_aba {
+body main #mbl .aside_aba {
   width: 20vw;
 }
-body main .aside_aba .cab_filtro {
+body main #mbl .aside_aba .cab_filtro {
   background-color: #aaeda3;
   min-width: 20vw;
   border: 1px solid;
@@ -219,7 +229,7 @@ body main .aside_aba .cab_filtro {
   border-radius: 20px 20px 0 0;
   margin: 5px 5px 0px 5px;
 }
-body main .aside_aba .cont_filtro {
+body main #mbl .aside_aba .cont_filtro {
   min-width: 20vw;
   background-color: rgba(247, 251, 246, 0.4235294118);
   border: 1px solid;
@@ -227,7 +237,7 @@ body main .aside_aba .cont_filtro {
   border-radius: 0 0 20px 20px;
   margin: 0px 5px 5px 5px;
 }
-body main #seção2 {
+body main #mbl #seção2 {
   background-color: #D9D9D9;
   margin: auto;
   border: 5px solid white;
@@ -236,25 +246,41 @@ body main #seção2 {
   padding: 5px 0;
   width: 75vw;
 }
-body main #seção2 .box_card:hover {
+body main #mbl #seção2 .box_card:hover {
   background-color: #63f253;
   color: white;
 }
-body main #seção2 .card_main {
+body main #mbl #seção2 .card_main {
   display: flex;
   justify-content: space-between;
   padding: 5px;
   margin: 5px;
 }
-body main #seção2 .box_card {
+body main #mbl #seção2 .box_card {
   background-color: rgba(247, 251, 246, 0.4235294118);
   color: black;
   margin: 20px;
   padding: 5px;
 }
-body main #seção2 .card_cab {
+body main #mbl #seção2 .card_cab {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   text-align: left;
+}
+
+.precoDesconto {
+  font-weight: 700;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.precoDesconto span {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #63f253;
 }
 
 #carousel {
