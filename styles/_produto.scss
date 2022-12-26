@@ -1,10 +1,9 @@
-
-    $fontPrincipal: "Kumbh Sans";
-    $corPrimaria2: rgb(7, 250, 68);
+$fontPrincipal: "Kumbh Sans";
+$corPrimaria: rgb(7, 250, 68);
 $corSecundaria: hsl(25, 100%, 94%);
-    $corNavegacao2: hsl(223, 64%, 98%);
-    $corNavegacaoHover2: hsl(220, 14%, 75%);
-  
+$corNavegacao: hsl(223, 64%, 98%);
+$corNavegacaoHover: hsl(220, 14%, 75%);
+
 
 #prod {
     max-width: 1200px;
@@ -13,7 +12,8 @@ $corSecundaria: hsl(25, 100%, 94%);
     align-items: center;
     gap: 50px;
     padding: 0 40px;
-    flex-flow: row wrap;
+    .m2{
+    flex-wrap: nowrap;}
 
     .imagens {
         img {
@@ -23,8 +23,10 @@ $corSecundaria: hsl(25, 100%, 94%);
         .imagemProduto {
             img {
                 width: 400px;
+                max-width: 600px;
             }
         }
+
         .imagemSeletor img {
             width: 80px;
             margin: 20px 8px;
@@ -36,43 +38,11 @@ $corSecundaria: hsl(25, 100%, 94%);
     .conteudo {
         max-width: 600px;
 
-        h2 {
-            color: $corPrimaria2;
-        }
+    }
 
-        .precoDesconto {
-            font-weight: 700;
-            font-size: 1.7rem;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        precoDesconto span {
-                padding: 5px 10px;
-                border-radius: 20px;
-                font-size: 1rem;
-                color: $corPrimaria;
-                background-color: $corSecundaria;
-            }
-        }
-    
-#carousel {
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  div {
-  min-width: 23%;
-      min-height: 171%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center;
-      font-size: 24px;
-      flex-direction: column
-  }
-  .img-carousel{
-  height: 200px;width: 190px
-  }}}
+    #carousel {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+    }
+}

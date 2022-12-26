@@ -6,12 +6,10 @@
 
 header nav {
   align-self: center;
-  border-radius: 20px;
   width: 100vw;
   margin: auto;
-  display: flex;
 }
-header nav div {
+header nav .navbar.is-primary {
   background-color: #33f366;
 }
 header nav img {
@@ -25,9 +23,10 @@ header nav .input_pesquisa {
 }
 header nav .input_button {
   background-color: #40FF9C;
-  width: 5vw;
   padding: 5px;
   border-radius: 0px 20px 20px 0;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 input[type=text],
@@ -150,20 +149,6 @@ span.size-48 {
   font-variation-settings: "OPSZ" 48;
 }
 
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-  -webkit-appearance: textfield;
-          appearance: textfield;
-}
-
-:root {
-  corPrimaria22: rgb(7, 250, 68);
-}
-
 #prod {
   max-width: 1200px;
   margin: 50px auto;
@@ -171,14 +156,17 @@ input[type=number] {
   align-items: center;
   gap: 50px;
   padding: 0 40px;
-  flex-flow: row wrap;
   /* Mexendo no conteudo do produto */
+}
+#prod .m2 {
+  flex-wrap: nowrap;
 }
 #prod .imagens img {
   border-radius: 20px;
 }
 #prod .imagens .imagemProduto img {
   width: 400px;
+  max-width: 600px;
 }
 #prod .imagens .imagemSeletor img {
   width: 80px;
@@ -187,22 +175,20 @@ input[type=number] {
 #prod .conteudo {
   max-width: 600px;
 }
-#prod .conteudo h2 {
-  color: var(corPrimaria2);
-}
-#prod .conteudo .precoDesconto {
-  font-weight: 700;
-  font-size: 1.7rem;
+#prod #carousel {
+  overflow-x: auto;
+  white-space: nowrap;
   display: flex;
-  align-items: center;
-  gap: 15px;
 }
-#prod .conteudo .precoDesconto span {
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 1rem;
-  color: var(--corPrimaria);
-  background-color: var(--corSecundaria);
+
+#cadr {
+  margin: auto;
+  width: auto;
+}
+#cadr h2 {
+  color: #aaeda3;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 * {
@@ -271,6 +257,34 @@ body main #seção2 .box_card {
 body main #seção2 .card_cab {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   text-align: left;
+}
+
+#carousel {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+}
+
+#carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#carousel > div {
+  min-width: 23%;
+  min-height: 171%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  flex-direction: column;
+}
+
+.img-carousel {
+  height: 200px;
+  width: 190px;
 }
 
 footer {
