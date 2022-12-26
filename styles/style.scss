@@ -1,5 +1,6 @@
-@use 'headerB';
-@use 'produto';
+@import 'headerB';
+@import 'produto';
+@import 'login-cad';
 
 $cor_fund1: #D9D9D9;
 $letra1: black;
@@ -12,7 +13,6 @@ $cor_fund2: #f7fbf66c;
     box-sizing: border-box;
 
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -88,44 +88,8 @@ body {
     }
 }
 
-footer {
-    background-color: #63f253;
-    width: 100vw;
-    text-align: center;
-}
- 
-
-.conteudo h2 {
-    color: $corPrimaria;
-  }
   
-  .precoDesconto {
-    font-weight: 700;
-    font-size: 1.7rem;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .precoDesconto span {
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 1rem;
-    color: $corPrimaria;
-    background-color: $corSecundaria;
-  }
-   #container {
-    width: 80%;
-    aspect-ratio: 2/1;
-    margin: auto;
-    border: solid rgb(213, 212, 212) 2px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-  } 
-  
-  #carousel {
+#carousel {
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
@@ -150,6 +114,13 @@ footer {
   .img-carousel{
   height: 200px;width: 190px
   }
+footer {
+    background-color: #63f253;
+    width: 100vw;
+    text-align: center;
+}
+
+ 
 
 
 @media only screen and (max-width: 1024px) {

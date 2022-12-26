@@ -6,12 +6,10 @@
 
 header nav {
   align-self: center;
-  border-radius: 20px;
   width: 100vw;
   margin: auto;
-  display: flex;
 }
-header nav div {
+header nav .navbar.is-primary {
   background-color: #33f366;
 }
 header nav img {
@@ -25,9 +23,10 @@ header nav .input_pesquisa {
 }
 header nav .input_button {
   background-color: #40FF9C;
-  width: 5vw;
   padding: 5px;
   border-radius: 0px 20px 20px 0;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 input[type=text],
@@ -176,13 +175,20 @@ span.size-48 {
 #prod .conteudo {
   max-width: 600px;
 }
-#prod .conteudo h2 {
-  color: rgb(7, 250, 68);
-}
 #prod #carousel {
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
+}
+
+#cadr {
+  margin: auto;
+  width: auto;
+}
+#cadr h2 {
+  color: #aaeda3;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 * {
@@ -253,44 +259,6 @@ body main #seção2 .card_cab {
   text-align: left;
 }
 
-footer {
-  background-color: #63f253;
-  width: 100vw;
-  text-align: center;
-}
-
-.conteudo h2 {
-  color: var(--corPrimaria);
-}
-
-.precoDesconto {
-  font-weight: 700;
-  font-size: 1.7rem;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.precoDesconto span {
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 1rem;
-  color: var(--corPrimaria);
-  background-color: var(--corSecundaria);
-}
-
-#container {
-  width: 80%;
-  aspect-ratio: 2/1;
-  margin: auto;
-  border: solid rgb(213, 212, 212) 2px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-}
-
 #carousel {
   overflow-x: auto;
   white-space: nowrap;
@@ -317,6 +285,12 @@ footer {
 .img-carousel {
   height: 200px;
   width: 190px;
+}
+
+footer {
+  background-color: #63f253;
+  width: 100vw;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
