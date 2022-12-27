@@ -20,7 +20,6 @@ body {
     min-height: 100vh;
     max-width: 1328px;
 
-    main {
     #mbl{
         width: 100vw;
         flex-grow: 1;
@@ -89,7 +88,6 @@ body {
         }
     }
 }
-}
 .precoDesconto {
     font-weight: 700;
     font-size: 1.7rem;
@@ -147,11 +145,11 @@ footer {
         width: 0vw;
         display: none;
     }
-
     * {
-        box-sizing: border-box;
-        border: 0px;
         padding: 0px;
+        border: 0px;
+        box-sizing: border-box;
+    
     }
 
     #burger {
